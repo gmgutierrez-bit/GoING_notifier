@@ -23,7 +23,7 @@ def enviar_correo(nuevas_reservas):
     msg['To'] = email_destino
     
     # Construimos el texto del mensaje sumando cada reserva
-    cuerpo = "Hola Max, tu bot ha detectado nuevas reservas en el portal:\n\n"
+    cuerpo = "Hola, tu bot ha detectado nuevas reservas en el portal:\n\n"
     
     for reserva in nuevas_reservas:
         cuerpo += f"📚 Curso: {reserva['curso']}\n"
